@@ -1,0 +1,138 @@
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>Untitled Form</h:title>
+    <model>
+      <instance>
+        <data id="build_Untitled-Form_1457763542">
+          <meta>
+            <instanceID/>
+          </meta>
+          <Nama>
+            Insert Your Name
+          </Nama>
+          <Jabatan>
+            Masukkan Jabatan Anda
+          </Jabatan>
+          <Bagian>
+            Masukkan Bagian Anda
+          </Bagian>
+          <TanggalInput/>
+          <JenisIjin>
+            Pilih Salah Satu
+          </JenisIjin>
+          <Keterangan>
+            Choose One
+          </Keterangan>
+        </data>
+      </instance>
+      <itext>
+        <translation lang="eng">
+          <text id="/data/Nama:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/Nama:hint">
+            <value>Ex : Octgi Ristya Perdana</value>
+          </text>
+          <text id="/data/Jabatan:label">
+            <value>Position</value>
+          </text>
+          <text id="/data/Jabatan:hint">
+            <value>Ex : Dosen, Karyawan</value>
+          </text>
+          <text id="/data/Bagian:label">
+            <value>Division</value>
+          </text>
+          <text id="/data/Bagian:hint">
+            <value>Ex : Akademik, Keuangan</value>
+          </text>
+          <text id="/data/TanggalInput:label">
+            <value>Date</value>
+          </text>
+          <text id="/data/TanggalInput:hint">
+            <value>Tanggal Hari Ini</value>
+          </text>
+          <text id="/data/JenisIjin:label">
+            <value>Jenis Ijin</value>
+          </text>
+          <text id="/data/JenisIjin:hint">
+            <value>Ex : sakit, melahirkan, cuti</value>
+          </text>
+          <text id="/data/JenisIjin:option0">
+            <value>Sakit</value>
+          </text>
+          <text id="/data/JenisIjin:option1">
+            <value>Cuti</value>
+          </text>
+          <text id="/data/JenisIjin:option2">
+            <value>Ijin Dinas Luar</value>
+          </text>
+          <text id="/data/JenisIjin:option3">
+            <value>Pulang Lebih Awal</value>
+          </text>
+          <text id="/data/Keterangan:label">
+            <value>Keterangan</value>
+          </text>
+          <text id="/data/Keterangan:hint">
+            <value>Mengetahui</value>
+          </text>
+          <text id="/data/Keterangan:option0">
+            <value>Kajur</value>
+          </text>
+        </translation>
+      </itext>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+      <bind nodeset="/data/Nama" type="string" required="true()"/>
+      <bind nodeset="/data/Jabatan" type="string" required="true()"/>
+      <bind nodeset="/data/Bagian" type="string" required="true()"/>
+      <bind nodeset="/data/TanggalInput" type="date" required="true()"/>
+      <bind nodeset="/data/JenisIjin" type="select1" readonly="true()"/>
+      <bind nodeset="/data/Keterangan" type="select" required="true()"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/data/Nama">
+      <label ref="jr:itext('/data/Nama:label')"/>
+      <hint ref="jr:itext('/data/Nama:hint')"/>
+    </input>
+    <input ref="/data/Jabatan">
+      <label ref="jr:itext('/data/Jabatan:label')"/>
+      <hint ref="jr:itext('/data/Jabatan:hint')"/>
+    </input>
+    <input ref="/data/Bagian">
+      <label ref="jr:itext('/data/Bagian:label')"/>
+      <hint ref="jr:itext('/data/Bagian:hint')"/>
+    </input>
+    <input ref="/data/TanggalInput">
+      <label ref="jr:itext('/data/TanggalInput:label')"/>
+      <hint ref="jr:itext('/data/TanggalInput:hint')"/>
+    </input>
+    <select1 ref="/data/JenisIjin">
+      <label ref="jr:itext('/data/JenisIjin:label')"/>
+      <hint ref="jr:itext('/data/JenisIjin:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/JenisIjin:option0')"/>
+        <value>Sakit</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/JenisIjin:option1')"/>
+        <value>Cuti</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/JenisIjin:option2')"/>
+        <value>Ijin Dinas Luar</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/JenisIjin:option3')"/>
+        <value>Pulang Lebih Awal</value>
+      </item>
+    </select1>
+    <select ref="/data/Keterangan">
+      <label ref="jr:itext('/data/Keterangan:label')"/>
+      <hint ref="jr:itext('/data/Keterangan:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/Keterangan:option0')"/>
+        <value>Sekjur</value>
+      </item>
+    </select>
+  </h:body>
+</h:html>
