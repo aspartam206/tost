@@ -3,17 +3,32 @@ Github untuk matakuliah TOST
 
 ##Dibuat oleh:
 
-| Type 		    | Contributor                                 |
+| Type 	        | Contributor                                 |
 | ------------- |:-------------------------------------------:| 
 | GitHub        | // 5213100072  / Mochammad Rizki Wicaksono  | 
 | ODK Learning  | // 5213100072  / Mochammad Rizki Wicaksono  | 
-| 			    | // 5213100176  / Octgi Ristya Perdana       | 
+|               | // 5213100176  / Octgi Ristya Perdana       | 
+
+##Folder Structure
+|--[README.md](//github.com/aspartam206/tost/blob/master/README.md)
+
+|--[LICENSE](//github.com/aspartam206/tost/blob/master/LICENSE)
+
+|--form
+
+>|--[form.xml](//github.com/aspartam206/tost/blob/master/form/form.xml)
+
+|--doc
+
+>|--[form.odf](//github.com/aspartam206/tost/blob/master/doc/form.odf)
+
+>|--[letter.odf](//github.com/aspartam206/tost/blob/master/doc/letter.odf)
 
 ###Pengertian ODK
 
 >Open Data Kit (ODK) is a free and open-source set of tools which help organizations author, field, and manage mobile data collection solutions. 
 
->*Note: Berikut adalah panduan dari ODK*
+>*Note: Berikut adalah panduan dari hasil praktikum ODK*
 
 > Type Form adalah **Surat Ijin Tidak Masuk**
 
@@ -24,7 +39,7 @@ Github untuk matakuliah TOST
 
 ###Installation
 
-1. Download **ODK Aggregate Installer**.
+1. Download [**ODK Aggregate Installer**](//opendatakit.org/downloads/).
 2. Install dengan mengikuti petunjuk yang ada di Installer.
 3. Kemudian buka Readme.html yang ada dalam folder tujuan *Installer*
 4. Masukan syntax yang berada pada file *create_db_and_user.sql* kedalam database yang digunakan.
@@ -82,3 +97,51 @@ Github untuk matakuliah TOST
 	```
 
 ###Create Form
+
+1. Buat form secara online menggunakan [build.opendatakit.com](//build.opendatakit.com) 
+2. Untuk contoh ada di folder from pada repo ini [form/form.xml](//github.com/aspartam206/tost/blob/master/form/form.xml)
+
+###Upload form to ODKAggregate Server
+
+1. Loginlah kedalam user yang dibuat pada proses installasi.
+	
+       *note:default password adalah aggregate.*
+
+2. Upload pada menu *form management*.
+
+###Collect data form ODK Connect on Android
+
+1. masuk pada play store, dan cari ODK Connect.
+2. kemudian install seperti biasa.
+	
+       *note:ODK Connect juga tersedia pada website [opendatakit.com](//opendatakit.com).*
+
+3. kemudian buka applikasinya dan setting server sesuai dengan host yang disetting saat installasi.
+4. masuk kemenu *Get Form*, tunggu hingga selesai, kembali ke menu utama.
+5. kemudian masuk kemenu *Fill Black Form*, dan isikan data sesuai keinginan, dan kembali kemenu utama.
+6. Kirim hasil form dengan menggunakan menu *Send Finalize Form*.
+
+###Screenshot
+
+>![alt text][sspc1]
+
+<!--
+![alt text][sshp1]
+![alt text][sshp2]
+![alt text][sshp3]
+
+![alt text][sshp4]
+![alt text][sshp5]
+![alt text][sshp6]
+-->
+
+>![alt text][sstilehp]
+
+[sspc1]: http://drive.google.com/uc?export=view&id=0B2xl7OulaZkwU0Uwa1pzd2R3bUU "ScreenShotPC 1"
+[sstilehp]: http://drive.google.com/uc?export=view&id=0B2xl7OulaZkwMTk4ZFVoWk1DQms "ScreenShotHP Tile"
+[sshp1]: http://drive.google.com/uc?export=view&id=0B2xl7OulaZkwd2dKVWxJV2FVUTAyVm1uX1M4UjIzSk5qSjc0 "ScreenShotHP 1"
+[sshp2]: http://drive.google.com/uc?export=view&id=0B2xl7OulaZkwZXJkOW14SU5oTDZOYVpGeE9NTlZ3U25admFv "ScreenShotHP 2"
+[sshp3]: http://drive.google.com/uc?export=view&id=0B2xl7OulaZkwaF9vUUZyN0E4eUI1QzU1R2pVekhya254NUlN "ScreenShotHP 3"
+[sshp4]: http://drive.google.com/uc?export=view&id=0B2xl7OulaZkwdXgwa0xRMFNwRVNrOS1haHM3R2p5Qm5kT3BR "ScreenShotHP 4"
+[sshp5]: http://drive.google.com/uc?export=view&id=0B2xl7OulaZkwZWx6b01KRXF1VS1nYlhsY1RrS3JVRG0zcm5F "ScreenShotHP 5"
+[sshp6]: http://drive.google.com/uc?export=view&id=0B2xl7OulaZkwck53QlFaMGpid081RGFfa1FHbHlmOGpLTHBV "ScreenShotHP 6"
