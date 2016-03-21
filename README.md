@@ -20,9 +20,9 @@ Github untuk matakuliah TOST
 
 |--doc
 
->|--[form.odf](//github.com/aspartam206/tost/blob/master/doc/form.odf)
+>|--[form.odt](//github.com/aspartam206/tost/blob/master/doc/form.odt)
 
->|--[letter.odf](//github.com/aspartam206/tost/blob/master/doc/letter.odf)
+>|--[letter.odt](//github.com/aspartam206/tost/blob/master/doc/letter.odt)
 
 ###Pengertian ODK
 
